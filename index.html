@@ -14,42 +14,42 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed; width: 100%; z-index: 1;">
             <div class="container-fluid">
-                <a href="./index.html"><img src="../assets/images/logo_icon.png" alt="51top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="./assets/images/logo_icon.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/quem_somos.html">Quem somos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Fale conosco
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Whatsapp</a></li>
-                        <li><a class="dropdown-item" href="#">Instagram</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Ligar agora</a></li>
-                        </ul>
-                    </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pilares">Especialistas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img src="./assets/media/icons/whatsapp.png" alt="">Whatsapp</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="./assets/media/icons/instagram.png" alt=""> Instagram</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img src="./assets/media/icons/disk.png" alt=""> Ligar</a></li>
                     </ul>
-                </div>
-                </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Shopping de Rua
+                        <div class="spinner-grow spinner-grow-sm" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </a>
+                </li>
+                </ul>
             </div>
+            </div>
+        </nav>
         </nav>
     </header>
     <section class="section">
@@ -67,7 +67,7 @@
 
 
     <section class="container">
-        <div class="pilares_container">
+        <div class="pilares_container" id="pilares">
             <div class="pilar1">
                 <img src="./assets/media/icons/lampada.png" alt="Treinamento Pessoal" />
                 <h1>Treinamento Pessoal</h1>
@@ -93,6 +93,32 @@
                     <p>O diferencial mercadológico da 51top está na forma de tratar os problemas de cada empresa, buscando contextualizar cada empresa em seu nincho de mercado e apresentando uma solução <span class="span">específica </span> e <span class="span">única</span> para cada caso.
                     </p>
                 </div>
+        </div>
+    </section>
+
+    <section class="especialistas" id="especialistas">
+        <h1>Especialistas
+            <hr>
+        </h1>
+        
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/05/09/59/75/360_F_509597532_RKUuYsERhODmkxkZd82pSHnFtDAtgbzJ.jpg" class="card-img-top"  alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Edward Vidal</h5>
+            <p class="card-text">Com formação nas áreas de psicologia, especialização em administração e pós graduação em marketing(desclinou de fazer monografia), se especializou nas áreas de gestão de pessoas e negócios.
+                Vem atuando no mercado empresarial por mais de 30 anos, tendo atuado (em diversas posições e funções) em órgãos da administração direta, empresas de economistas, e principalmente nas organizações privadas, a exemplo do ramo de combustíveis, de farmácia, de profissionais autônomos e do comércio em geral
+                Consultor, palestrante instrutor já colaboraram com diversas empresas nacionais dos mais variados segmentos.</p>
+            </div>
+        </div>
+        <div class="card" ">
+            <img src="https://t4.ftcdn.net/jpg/05/09/59/75/360_F_509597532_RKUuYsERhODmkxkZd82pSHnFtDAtgbzJ.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Leila Maria</h5>
+            <p class="card-text">Atuou na área de vendas de balcão por vários anos, fazendo um atendimento verticalizado onde além de fechar as vendas ainda dimensionava a compra de acordo com os tamanho, 
+                quantidade e cores que interessava ao comprador, fazendo inclusive a entrega dos produtos manufaturados. <br>
+                Atualmente é colaboradora da 51top na área de vendas e atendimento ao cliente. <br>
+                Concomitantemente é gestora de uma pequena carteira de locação imobiliária.</a>
+            </div>
         </div>
     </section>
 

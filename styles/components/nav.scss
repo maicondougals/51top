@@ -5,6 +5,7 @@ header{
     background: conic-gradient(from 180deg, $color-white,  $color-grey);
     font-family:var(--font-text);
 }
+
 .span{
     color: $color-orange;
 }
@@ -36,15 +37,13 @@ header{
     align-items: center;
     justify-content: left;
     overflow: hidden;
-    background: linear-gradient(45deg, $color-orange, white);
+    background: linear-gradient(45deg, blue, white, red);
     background-size: 600% 600%;
     animation: gradientAnimation 10s infinite;
     color: white;
     .text{
-       
         margin-left: 0px;
         padding: 10px;
-        z-index: 1;
     }
     .arte{
         position: absolute;
@@ -181,6 +180,24 @@ header{
                     }
                 }
             }
+            .especialistas{
+                background-color: white;
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                .card{
+                box-shadow: 0px 0px 10px 1px grey;
+                border-radius: 25px;
+                width: 400px;
+                .card-img-top{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 25px;
+                }
+            
+                }
+            }
             .shoppingderua{
                 height: 500px;
                 .text{
@@ -313,6 +330,23 @@ header{
                     height: 300px;
                     text-align: center;
                 }
+            }
+        }
+        .especialistas{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+                width: 80%;
+                box-shadow: 0px 0px 10px 1px grey;
+                border-radius: 25px;
+                margin-top: 20px;
+            }
+            .card-img-top{
+                width: 200px;
+                height: 200px;
+                border-radius: 25px;
             }
         }
         .shoppingderua{
@@ -453,6 +487,23 @@ header{
                 }
             }
         } 
+        .especialistas{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+               width: 80%;
+                box-shadow: 0px 0px 10px 1px grey;
+                border-radius: 25px;
+                margin-top: 20px;
+            }
+            .card-img-top{
+                width: 200px;
+                height: 200px;
+                border-radius: 25px;
+            }
+        }
         .shoppingderua{
             height: 700px;
             .text{

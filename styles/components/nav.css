@@ -36,7 +36,7 @@ header {
   align-items: center;
   justify-content: left;
   overflow: hidden;
-  background: linear-gradient(45deg, rgb(255, 144, 1), white);
+  background: linear-gradient(45deg, blue, white, red);
   background-size: 600% 600%;
   animation: gradientAnimation 10s infinite;
   color: white;
@@ -44,7 +44,6 @@ header {
 .shoppingderua .text {
   margin-left: 0px;
   padding: 10px;
-  z-index: 1;
 }
 .shoppingderua .arte {
   position: absolute;
@@ -176,6 +175,23 @@ header {
   }
   .container .pilares_container .pilar4 img {
     width: 100px;
+  }
+  .especialistas {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .especialistas .card {
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 25px;
+    width: 400px;
+  }
+  .especialistas .card .card-img-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
   }
   .shoppingderua {
     height: 500px;
@@ -313,6 +329,23 @@ header {
   }
   .container .pilares_container .pilar4 img {
     width: 100px;
+  }
+  .especialistas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .especialistas .card {
+    width: 80%;
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  .especialistas .card-img-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
   }
   .shoppingderua {
     height: 500px;
@@ -453,6 +486,23 @@ header {
   }
   .container .pilares_container .pilar4 img {
     width: 100px;
+  }
+  .especialistas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .especialistas .card {
+    width: 80%;
+    box-shadow: 0px 0px 10px 1px grey;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  .especialistas .card-img-top {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
   }
   .shoppingderua {
     height: 700px;
