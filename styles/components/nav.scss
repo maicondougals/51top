@@ -37,7 +37,7 @@ header{
     align-items: center;
     justify-content: left;
     overflow: hidden;
-    background: linear-gradient(45deg, blue, white, red);
+    background: linear-gradient(45deg, blue, $color-grey, red);
     background-size: 600% 600%;
     animation: gradientAnimation 10s infinite;
     color: white;
@@ -187,6 +187,7 @@ header{
                 box-shadow: 0px 0px 10px 1px grey;
                 border-radius: 25px;
                 width: 400px;
+                margin: 20px auto;
                 .card-img-top{
                     width: 200px;
                     height: 200px;
@@ -338,7 +339,7 @@ header{
                 width: 80%;
                 box-shadow: 0px 0px 10px 1px grey;
                 border-radius: 25px;
-                margin-top: 20px;
+                margin: 20px auto;
             }
             .card-img-top{
                 width: 200px;
@@ -493,7 +494,8 @@ header{
                width: 80%;
                 box-shadow: 0px 0px 10px 1px grey;
                 border-radius: 25px;
-                margin-top: 20px;
+                margin: 20px auto;
+               
             }
             .card-img-top{
                 width: 200px;
@@ -507,8 +509,8 @@ header{
                 margin-top: 320px;
             }
             .arte{
-                margin-bottom: 500px;
-                height: 300px;
+                margin-bottom: 400px;
+                height: 350px;
             }
         }
         .footer{
