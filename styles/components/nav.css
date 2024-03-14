@@ -13,6 +13,10 @@ header {
   text-align: left;
 }
 
+#texto_oculto {
+  display: none;
+}
+
 .aside {
   position: absolute;
   background: linear-gradient(rgb(255, 144, 1) 50%, transparent 95%);
@@ -81,29 +85,28 @@ header {
     background-size: cover;
     background-position: center;
   }
-  .article {
-    position: absolute;
+  .section .article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50px;
-    width: 500px;
-    height: 450px;
+    margin: 25px;
+    width: 45vw;
+    padding: 25px;
   }
-  .article h1 {
+  .section .article h1 {
     padding: 20px;
   }
-  .article h3 {
+  .section .article h3 {
     font-size: 20px;
   }
-  .article .bottom {
+  .section .article .bottom {
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: center;
     margin: 15px auto;
   }
-  .article .bottom a {
+  .section .article .bottom a {
     background-color: rgb(0, 105, 210);
     padding: 10px;
     border-radius: 25px;
@@ -129,9 +132,6 @@ header {
     top: 300px;
     width: 300px;
     height: auto;
-  }
-  .section {
-    height: 600px;
   }
   .container {
     height: 500px;
@@ -181,15 +181,24 @@ header {
     display: flex;
     justify-content: space-around;
   }
+  .especialistas .card:hover {
+    box-shadow: 0px 10px 20px 10px grey;
+  }
   .especialistas .card {
-    box-shadow: 0px 0px 10px 1px grey;
+    box-shadow: 0px 10px 20px 1px grey;
     border-radius: 25px;
     width: 400px;
     margin: 20px auto;
   }
+  .especialistas .card .card-title {
+    color: orange;
+    font-size: 50px;
+    box-shadow: 0px -45px 40px 50px white;
+  }
   .especialistas .card .card-img-top {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 -50px 10px black;
     border-radius: 25px;
   }
   .shoppingderua {
@@ -229,28 +238,29 @@ header {
     background-size: cover;
     background-position: center;
   }
-  .article {
+  .section .article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 500px;
-    height: 450px;
+    width: 750px;
+    padding: 25px;
   }
-  .article h1 {
+  .section .article h1 {
     padding: 20px;
+    margin: 50px auto;
   }
-  .article h3 {
+  .section .article h3 {
     font-size: 18px;
   }
-  .article .bottom {
+  .section .article .bottom {
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: center;
     margin: 30px auto;
   }
-  .article .bottom a {
+  .section .article .bottom a {
     background-color: rgb(0, 105, 210);
     padding: 10px;
     border-radius: 25px;
@@ -277,9 +287,6 @@ header {
     top: 300px;
     width: 300px;
     height: auto;
-  }
-  .section {
-    height: 600px;
   }
   .container {
     height: 800px;
@@ -335,15 +342,24 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .especialistas .card:hover {
+    box-shadow: 0px 10px 20px 10px grey;
+  }
   .especialistas .card {
     width: 80%;
-    box-shadow: 0px 0px 10px 1px grey;
+    box-shadow: 0px 10px 20px 1px grey;
     border-radius: 25px;
     margin: 20px auto;
   }
+  .especialistas .card .card-title {
+    color: orange;
+    font-size: 50px;
+    box-shadow: 0px -45px 40px 50px white;
+  }
   .especialistas .card-img-top {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 -50px 10px black;
     border-radius: 25px;
   }
   .shoppingderua {
@@ -388,10 +404,11 @@ header {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 90%;
-    height: 450px;
+    width: 90vw;
+    padding: 25px;
   }
   .article h1 {
+    margin: 55px auto;
     padding: 20px;
   }
   .article h3 {
@@ -432,9 +449,6 @@ header {
     top: 300px;
     width: 300px;
     height: auto;
-  }
-  .section {
-    height: 600px;
   }
   .container {
     height: 1500px;
@@ -494,13 +508,19 @@ header {
   }
   .especialistas .card {
     width: 80%;
-    box-shadow: 0px 0px 10px 1px grey;
+    box-shadow: 0px 10px 20px 1px grey;
     border-radius: 25px;
     margin: 20px auto;
   }
+  .especialistas .card .card-title {
+    color: orange;
+    font-size: 50px;
+    box-shadow: 0px -45px 40px 50px white;
+  }
   .especialistas .card-img-top {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 -50px 10px black;
     border-radius: 25px;
   }
   .shoppingderua {

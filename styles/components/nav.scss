@@ -14,6 +14,9 @@ header{
         text-align: left;
     }
 }
+#texto_oculto{
+    display: none;
+}
 
 .aside{
     position: absolute;
@@ -83,37 +86,37 @@ header{
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-            }
-            .article{
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 50px;
-                width: 500px;
-                height: 450px;
-                h1{
-                    
-                    padding: 20px;
-                }
-                h3{
-                    font-size: 20px;
-                    
-                }
-                .bottom{
+                .article{
+
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    flex-direction: row;
-                    text-align: center;
-                    
-                    margin: 15px auto;
-                    a{
-                        background-color:$color-blue;
-                        padding: 10px;
-                        border-radius: 25px;
-                        text-decoration: none;
-                        color: $color-white;
-                        margin: auto 0;
+                    margin: 25px;
+                    width: 45vw;
+                    padding: 25px;
+                    h1{
+                        
+                        padding: 20px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        
+                    }
+                    .bottom{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        text-align: center;
+                        
+                        margin: 15px auto;
+                        a{
+                            background-color:$color-blue;
+                            padding: 10px;
+                            border-radius: 25px;
+                            text-decoration: none;
+                            color: $color-white;
+                            margin: auto 0;
+                        }
                     }
                 }
             }
@@ -137,11 +140,7 @@ header{
                     height: auto;
                 }
             }
-            .section{
-                height: 600px;
-            }
             .container{  
-                
                 height: 500px;
                 display: flex;
                 justify-content: space-around;
@@ -183,15 +182,25 @@ header{
                 height: auto;
                 display: flex;
                 justify-content: space-around;
+                .card:hover{
+                    box-shadow: 0px 10px 20px 10px grey;
+                }
                 .card{
-                box-shadow: 0px 0px 10px 1px grey;
+                box-shadow: 0px 10px 20px 1px grey;
                 border-radius: 25px;
                 width: 400px;
                 margin: 20px auto;
+                .card-title{
+                    color: orange;
+                    font-size: 50px;
+                    box-shadow: 0px -45px 40px 50px white;
+               
+                }
                 .card-img-top{
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 25px;
+                    width: 100%;
+                height: auto;
+                box-shadow: 0 0 -50px 10px black;
+                border-radius: 25px;
                 }
             
                 }
@@ -234,37 +243,40 @@ header{
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-        }
-        .article{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;
-            width: 500px;
-            height: 450px;
-            h1{  
-                padding: 20px;
-            }
-            h3{
-                font-size: 18px;
-                
-            }
-            .bottom{
+            .article{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                flex-direction: row;
-                text-align: center;
+                margin: 0 auto;
+                width: 750px;
+                padding: 25px;
+    
                 
-                margin: 30px auto;
-                a{
-                    background-color: $color-blue;
-                    padding: 10px;
-                    border-radius: 25px;
-                    text-decoration: none;
-                    color: white;
-                    margin: auto 0;
+                h1{  
+                    padding: 20px;
+                    margin: 50px auto;
                 }
-            }
+                h3{
+                    font-size: 18px;
+                    
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    text-align: center;
+                    
+                    margin: 30px auto;
+                    a{
+                        background-color: $color-blue;
+                        padding: 10px;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        color: white;
+                        margin: auto 0;
+                    }
+                }
+            } 
         }
         .aside{
             right: 0px;
@@ -286,9 +298,7 @@ header{
                 height: auto;
             }
         }
-        .section{
-            height: 600px;
-        }
+
         .container{
             height: 800px;
             display: flex;
@@ -335,15 +345,27 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
+            .card:hover{
+                box-shadow: 0px 10px 20px 10px grey;
+            }
+            
             .card{
+                .card-title{
+                    color: orange;
+                    font-size: 50px;
+                    box-shadow: 0px -45px 40px 50px white;
+               
+                }
                 width: 80%;
-                box-shadow: 0px 0px 10px 1px grey;
+                box-shadow: 0px 10px 20px 1px grey;
                 border-radius: 25px;
                 margin: 20px auto;
+                
             }
             .card-img-top{
-                width: 200px;
-                height: 200px;
+                width: 100%;
+                height: auto;
+                box-shadow: 0 0 -50px 10px black;
                 border-radius: 25px;
             }
         }
@@ -391,9 +413,11 @@ header{
             flex-direction: column;
             justify-content: center;
             margin: 0 auto;
-            width: 90%;
-            height: 450px;
+            width: 90vw;
+            padding: 25px;
+
             h1{
+                margin: 55px auto;
                 padding: 20px;
             }
             h3{
@@ -437,9 +461,6 @@ header{
                 width: 300px;
                 height: auto;
             }
-        }
-        .section{
-            height: 600px;
         }
         .container{  
             height: 1500px;
@@ -490,16 +511,24 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
+            
             .card{
-               width: 80%;
-                box-shadow: 0px 0px 10px 1px grey;
+                .card-title{
+                    color: orange;
+                    font-size: 50px;
+                    box-shadow: 0px -45px 40px 50px white;
+               
+                }
+                width: 80%;
+                box-shadow: 0px 10px 20px 1px grey;
                 border-radius: 25px;
                 margin: 20px auto;
-               
+                
             }
             .card-img-top{
-                width: 200px;
-                height: 200px;
+                width: 100%;
+                height: auto;
+                box-shadow: 0 0 -50px 10px black;
                 border-radius: 25px;
             }
         }
