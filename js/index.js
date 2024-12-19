@@ -15,6 +15,9 @@ document.querySelector('.btn-primary').addEventListener('click', function(){
     }
 })
 
+// Registrar o plugin
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 gsap.to('.pilares_container',{
@@ -103,3 +106,17 @@ icons.forEach(iconElement => {
   iconElement.addEventListener('mouseleave', () => animation.stop());
 });
 
+
+document.querySelectorAll('.btn-question').forEach((button) => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    if (answer.style.height) {
+      answer.style.height = null;
+      button.innerHTML = 'Ver mais'
+    } else {
+      answer.style.height = answer.scrollHeight + "px";
+      
+      button.innerHTML = 'Ver menos'
+    }
+  });
+});
